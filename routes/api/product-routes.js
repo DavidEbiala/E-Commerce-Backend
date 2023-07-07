@@ -53,9 +53,8 @@ router.get('/:id', async (req, res) => {
                     message: 'Product was not found'
                 });
                 return;
-        }else{
+            }
             res.json(productData);
-        }
     }catch(err){
         console.log(err);
         res.status(500).json(err);
